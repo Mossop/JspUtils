@@ -14,4 +14,8 @@
 
 	<target name="docs" depends="basedocs"/>
 	
+	<target name="doit" depends="setup">
+		<replace dir="${base}" includes="**/*.java" token="com.brass-bullet." value="com.brassbullet."/>
+	</target>
+		
 </project>
