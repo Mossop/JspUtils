@@ -1,0 +1,17 @@
+<!DOCTYPE project [
+	<!ENTITY includes SYSTEM "../includes/includes.xml">
+]>
+
+<project name="JspUtils" default="build">
+
+	<property name="AppName" value="jsputils"/>
+
+	&includes;
+
+	<target name="build" depends="basebuild"/>
+
+	<target name="package" depends="basepackage"/>
+
+	<target name="docs" depends="basedocs"/>
+	
+</project>
